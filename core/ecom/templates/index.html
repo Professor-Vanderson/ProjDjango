@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>UI Kit</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/application.css">
+    <!--<link rel="shortcut icon" href="img/favicon.png">-->
+  </head>
+  <body>
+    <div class="grid">
+      <header class="grid__col--12 panel--padded--centered" role="banner"> 
+        <!--<a class="site-logo" href="/">
+          <b class="srt">Usando - UI Toolkit</b>
+        </a>-->
+        <nav class="navbar" role="navigation">
+          <span id="toggle" class="icn--nav-toggle is-displayed-mobile">
+            <b class="srt">Alternar</b>
+          </span>   
+          <ul class="nav is-collapsed-mobile">
+            <li class="nav__item"><a href="#type">Link 1</a></li>
+            <li class="nav__item"><a href="#buttons">Link 2</a></li>
+            <li class="nav__item"><a href="#forms">Link 3</a></li>
+            <li class="nav__item"><a href="#progbars">Link 4</a></li>
+            <li class="nav__item"><a href="#images">Link 5</a></li>
+            <li class="nav__item"><a href="#grid">Tabelas</a></li>
+            <li class="nav__item--current"><a href="#nav">Navigation</a></li>
+          </ul>
+        </nav>
+      </header>
+    </div>
+
+    <div class="grid is-hidden-mobile">
+      <div class="grid__col--12">
+        <img class="img--hero" src="img/img1.jpg" alt="UI Kit">
+      </div>
+    </div>
+
+    <h4 id="type" class="grid">Tipografia</h4>
+
+    <div class="grid">
+      <div class="centered grid__col--8">
+        <h1 class="headline-primary--grouped"></h1>
+        <h2 class="headline-secondary--grouped"></h2>
+        <p>Lorem ipsum platea metus cursus pharetra curae 
+		aptent amet per volutpat, turpis tincidunt sapien 
+		dolor diam ut fames inceptos nisi vehicula, tristique 
+		conubia fames inceptos lorem at enim mi vulputate. 
+		quis ipsum vitae velit nostra congue sed eros ultrices 
+		orci odio, netus ante dapibus vivamus congue taciti quisque 
+		odio aptent eget et, suscipit fames leo nam primis vehicula 
+		purus donec lobortis. pretium phasellus libero taciti nisl 
+		dolor, consectetur quisque nibh consequat, dapibus 
+		ante lorem velit. dictum integer taciti mollis maecenas 
+		nunc est vulputate at a primis gravida risus mollis, 
+		augue amet etiam pellentesque quis eros 
+		elementum suspendisse vestibulum mollis hac. </p>
+        <blockquote></blockquote>
+      </div>
+    </div>
+
+    <script src="http://code.jquery.com/jquery-2.1.1.min.js"></script>
+    <script>
+      $('#toggle').click(function() {
+        $(this).next('.nav').toggleClass("is-collapsed-mobile");
+      });
+    </script>
+  </body>
+</html>
